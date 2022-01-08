@@ -1,5 +1,6 @@
 <?php
 include_once "pages/auth.php";
+include_once "pages/relog.php";
 ?>
 
 <!DOCTYPE html>
