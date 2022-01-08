@@ -1,6 +1,16 @@
 <?php
 include_once "pages/auth.php";
-include_once "pages/relog.php";
+
+if ($_SERVER["REQUEST_URI"] == "/logout") {
+    include_once "pages/logout.php";
+
+?>
+    <script type="text/javascript">
+        location = "/";
+    </script>
+<?php
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -91,10 +101,7 @@ include_once "pages/relog.php";
             include_once("pages/404.html");
             break;
     }
-
     ?>
-
-
 
 
 

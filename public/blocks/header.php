@@ -11,7 +11,7 @@
         ?>
             <a class="p-2 text-dark" href="weather">Прогноз погоды</a>
             <a class="p-2 text-dark" href="movies">Поиск фильмов</a>
-            <a class="btn btn-danger" href="relog">Выйти</a>
+            <a class="btn btn-danger" href="logout">Выйти</a>
         <?php
         }
 
