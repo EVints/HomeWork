@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="../css/weather_style.css">
+</head>
+
+<body>
+
+    <h1>Прогноз погоды</h1>
+
+    <fieldset id="fieldset">
+        <legend>Weather</legend>
+        <span>City:</span><input type="text" id="userSearch">
+        <button id="weatherSearchButton">Search</button>
+    </fieldset>
+
+
+    <div id="mainDiv">
+
+        <div id="accurateWeather">
+            <p id="header">
+                <span id="city"></span>
+                <span id="date"></span>
+            </p>
+
+            <div id="weatherNow">
+
+                <div>
+                    <span id="preIMG"></span>
+                    <img src="#" alt="" id="weatherIMG">
+                </div>
+
+                <div id="degree"></div>
+
+                <div>
+                    <p id="minT"></p>
+                    <p id="maxT"></p>
+                    <p id="windSpeed"></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="divHourlyWeather">
+            <p id="hourlyHeader">Hourly</p>
+
+            <div id="mainInfo">
+
+                <div id="col1">
+                    <span id="dayToday">Sunday</span>
+                    <div id="divImg"></div>
+                    <span>Forecast</span>
+                    <span>Temp C</span>
+                    <span>Wind (km/h)</span>
+                </div>
+
+                <div id="col2">
+                    <div id="weatherTime">
+                        <span>7:00</span><span>8:00</span><span>9:00</span><span>10:00</span><span>11:00</span><span>12:00</span>
+                    </div>
+
+                    <div id="hourlyImages">
+                        <img src="" alt="#"><img src="" alt="#"><img src="" alt="#"><img src="" alt="#"><img src="" alt="#"><img src="" alt="#">
+                    </div>
+
+                    <div id="hourlyForecast">
+                        <span>Sunny</span><span>Sunny</span><span>Sunny</span><span>Sunny</span><span>Sunny</span><span>Sunny</span>
+                    </div>
+
+                    <div id="hourlyTemp">
+                        <span>18C</span><span>18C</span><span>18C</span><span>18C</span><span>18C</span><span>18C</span>
+                    </div>
+
+                    <div id="hourlyWind">
+                        <span>2</span><span>2</span><span>2</span><span>2</span><span>2</span><span>2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../script/weather.js"></script>
+
+</body>
+
+</html>

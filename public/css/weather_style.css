@@ -1,0 +1,99 @@
+
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #accurateWeather,
+        #divHourlyWeather {
+            margin-top: 30px;
+            padding: 30px;
+            background-color: rgb(233, 233, 233);
+            border-radius: 10px;
+            display: none;
+        }
+
+        #header,
+        #hourlyHeader {
+            color: rgb(0, 97, 97);
+            font-weight: 800;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        #hourlyHeader {
+            text-align: left;
+        }
+
+
+
+        #header,
+        #weatherNow {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #weatherNow {
+            padding-right: 100px;
+        }
+
+        #weatherNow div:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #weatherIMG {
+            width: 100px;
+            height: 100px;
+            object-fit: fill;
+        }
+
+        #hourlyImages img,
+        #divImg {
+            width: 70px;
+            height: 70px;
+        }
+
+        #degree {
+            font-size: 50px;
+            margin: auto;
+            font-weight: 100;
+        }
+
+        #weatherTime,
+        #hourlyImages,
+        #hourlyForecast,
+        #hourlyTemp,
+        #hourlyWind {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #mainInfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #col1,
+        #col2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        #col1 {
+            flex-grow: 1;
+        }
+
+        #col2 {
+            flex-grow: 6;
+        }
+
+        #col2>div * {
+            width: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }

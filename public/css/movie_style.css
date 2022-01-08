@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+input,
+select {
+    width: 200px;
+}
+
+label {
+    display: flex;
+    width: max-content;
+}
+
+label>span {
+    width: 200px;
+    text-align: center;
+}
+
+fieldset button {
+    width: 150px;
+    align-self: center;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    height: 120px;
+    width: 500px;
+}
+
+#allFilms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filmPoster {
+    display: flex;
+    margin: 30px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.filmImg {
+    height: 250px;
+    margin-right: 20px;
+}
+
+.divInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.filmDetailsBut {
+    width: 150px;
+}
+
+footer {
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a {
+    margin: 3px
+}

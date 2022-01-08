@@ -1,0 +1,23 @@
+version: '3.2'
+
+services:
+  frontend:
+    container_name: frontend_container
+    build:
+      context: .
+      dockerfile: .deploy/docker/frontend/Dockerfile
+    volumes:
+      - ./.deploy/docker/frontend/nginx.conf:/etc/nginx/conf.d/default.conf
+      - .:/app
+    depends_on:
+      - backend
+    ports:
+      - 8800:80
+
+  backend:
+    container_name: backend_container
+    build:
+      context: .
+      dockerfile: .deploy/docker/backend/Dockerfile
+    volumes:
+      - .:/app
