@@ -1,8 +1,8 @@
 <?php
-include_once "pages/auth.php";
+include_once "../pages/auth.php";
 
 if ($_SERVER["REQUEST_URI"] == "/logout") {
-    include_once "pages/logout.php";
+    include_once "../pages/logout.php";
 
 ?>
     <script type="text/javascript">
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
 
 
     <?php
-    include_once('blocks/header.php');
+    include_once('../blocks/header.php');
     ?>
 
 
@@ -39,12 +39,12 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
     switch ($_SERVER["REQUEST_URI"]) {
 
         case "/":
-            include_once("pages/home.php");
+            include_once("../pages/home.php");
             break;
 
         case "/movies":
             if ($_COOKIE) {
-                include_once("pages/movies_search.html");
+                include_once("../pages/movies_search.html");
             } else {
     ?>
                 <script type="text/javascript">
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
 
         case "/weather":
             if ($_COOKIE) {
-                include_once("pages/weather.html");
+                include_once("../pages/weather.html");
             } else {
             ?>
                 <script type="text/javascript">
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
 
         case "/login":
             if (!$_COOKIE) {
-                include_once("pages/login.php");
+                include_once("../pages/login.php");
             } else {
             ?>
                 <script type="text/javascript">
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
 
         case "/registration":
             if (!$_COOKIE) {
-                include_once("pages/registration.php");
+                include_once("../pages/registration.php");
             } else {
             ?>
                 <script type="text/javascript">
@@ -94,11 +94,11 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
             break;
 
         case "/reg_success":
-            include_once("pages/reg_successfull.php");
+            include_once("../pages/reg_successfull.php");
             break;
 
         default:
-            include_once("pages/404.html");
+            include_once("../pages/404.html");
             break;
     }
     ?>
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_URI"] == "/logout") {
 
 
     <?php
-    include_once('blocks/footer.php');
+    include_once('../blocks/footer.php');
     ?>
 
 
